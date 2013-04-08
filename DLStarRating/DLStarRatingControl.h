@@ -35,6 +35,6 @@
 
 @protocol DLStarRatingDelegate
 
-- (void)newRating:(DLStarRatingControl *)control: (NSUInteger)rating;
+- (void)newRating:(DLStarRatingControl *)control withRating:(NSUInteger)rating;
 
 @end

@@ -32,6 +32,7 @@
 	for (int i=0; i<numberOfStars; i++) {
 		DLStarView *v = [[DLStarView alloc] initWithDefault:self.star highlighted:self.highlightedStar position:i];
 		[self addSubview:v];
+        [v release];
 	}
 }
 
@@ -148,7 +149,7 @@
 }
 
 - (void)endTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
-	[self.delegate newRating:self :self.rating];
+	[self.delegate newRating:self withRating:self.rating];
 	[super endTrackingWithTouch:touch withEvent:event];
 }
 

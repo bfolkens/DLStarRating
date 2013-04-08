@@ -12,7 +12,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define kEdgeInsetBottom 10
+#define kEdgeInsetBottom 0
 #define kTagOffset 18000
 
 @interface DLStarView : UIButton {
